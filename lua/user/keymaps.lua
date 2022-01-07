@@ -4,11 +4,14 @@ local opts = {noremap = true, silent = true}
 
 -- Remap leader key
 map('', ',', '<Nop>', opts)
-vim.g.mapleader = ','
-vim.g.maplocalleader = ','
+vim.g.mapleader = ","
+vim.g.maplocalleader = ","
 
--- NERDTree bar
-map('n', '<C-n>', ':NERDTreeToggle<CR>', opts)
+-- NvimTree bar
+map('n', '<C-n>', ':NvimTreeToggle<cr>', opts)
+
+-- Disable highlight
+map('n', '<leader><Space>', ':nohlsearch<cr>', opts)
 
 -- Better navigation
 map('n', '<C-h>', '<C-w>h', opts)
