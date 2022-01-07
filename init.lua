@@ -1,3 +1,2 @@
-require "keymaps"
-require "comment"
-require "plugins"
+require "user.options"
+require "user.keymaps"
