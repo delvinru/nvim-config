@@ -75,6 +75,9 @@ return packer.startup(function(use)
     use 'neovim/nvim-lspconfig'
     use 'williamboman/nvim-lsp-installer'
 
+    -- Snippets
+    use 'L3MON4D3/LuaSnip'
+
     -- Autosetup stuff
     if packer_bootstrap then
         packer.sync()
