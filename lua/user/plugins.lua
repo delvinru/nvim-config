@@ -72,6 +72,7 @@ return packer.startup(function(use)
 
     -- Colorschemes
     use {"ellisonleao/gruvbox.nvim", requires = {"rktjmp/lush.nvim"}}
+    use 'LunarVim/darkplus.nvim'
 
 
     -- cmp plugins
@@ -90,7 +91,6 @@ return packer.startup(function(use)
 
     -- Bufferline
     use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
-    use 'moll/vim-bbye'
 
     -- Autosetup stuff
     if packer_bootstrap then
