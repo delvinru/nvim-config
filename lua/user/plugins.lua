@@ -88,6 +88,10 @@ return packer.startup(function(use)
     -- Snippets
     use 'L3MON4D3/LuaSnip'
 
+    -- Bufferline
+    use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
+    use 'moll/vim-bbye'
+
     -- Autosetup stuff
     if packer_bootstrap then
         packer.sync()
