@@ -3,7 +3,7 @@ local fn = vim.fn
 -- Auto install stuff from official repo
 local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
 if fn.empty(fn.glob(install_path)) > 0 then
-    packer_bootstrap = fn.system({
+    PACKER_BOOTSTRAP = fn.system({
         'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path
     })
     vim.cmd [[ packadd packer.nvim ]]
@@ -76,25 +76,27 @@ return packer.startup(function(use)
 
 
     -- cmp plugins
-    use 'hrsh7th/cmp-nvim-lsp'
+    use 'hrsh7th/nvim-cmp'
     use 'hrsh7th/cmp-buffer'
     use 'hrsh7th/cmp-path'
     use 'hrsh7th/cmp-cmdline'
-    use 'hrsh7th/nvim-cmp'
+    use 'saadparwaiz1/cmp_luasnip'
+    use 'hrsh7th/cmp-nvim-lsp'
 
     -- LSP config
     use 'neovim/nvim-lspconfig'
     use 'williamboman/nvim-lsp-installer'
 
     -- Snippets
-    use 'L3MON4D3/LuaSnip'
+    use 'L3MON4D3/LuaSnip'                  -- Snippet engine
+    use "rafamadriz/friendly-snippets"      -- A bunch of snippets
 
     -- Bufferline
     use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
     use 'moll/vim-bbye'
 
     -- Autosetup stuff
-    if packer_bootstrap then
+    if PACKER_BOOTSTRAP then
         packer.sync()
     end
 end)

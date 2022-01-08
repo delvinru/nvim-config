@@ -29,3 +29,9 @@ map('n', '<C-Right>', ':vertical resize +2<CR>', opts)
 map('n', 'H', ':BufferLineCyclePrev<CR>', opts)
 map('n', 'L', ':BufferLineCycleNext<CR>', opts)
 map('n', 'X', ':Bdelete! %<CR>', opts)
+
+-- Easy life
+map('n', 'S', ':%s//g<Left><Left>', { noremap = true })
+
+-- Pyright stuff
+map('n', 'fi', ':PyrightOrganizeImports<CR>', opts)

@@ -2,6 +2,7 @@ local options = {
     backup = false,                          -- don't create backup
     conceallevel = 0,                        -- so that `` is visible in markdown files
     fileencoding = "utf-8",                  -- normal encodings for file
+    mouse = "a",                             -- enable mouse support
     hlsearch = true,                         -- highlight all matches on previous search pattern
     ignorecase = true,                       -- ignore case in search patterns
     showmode = false,                        -- disable -- INSERT -- in airline
