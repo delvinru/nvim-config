@@ -91,6 +91,7 @@ return packer.startup(function(use)
 
     -- Bufferline
     use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
+    use 'moll/vim-bbye'
 
     -- Autosetup stuff
     if packer_bootstrap then
