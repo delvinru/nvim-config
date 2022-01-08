@@ -1,5 +1,5 @@
 vim.cmd [[
-    colorscheme gruvbox
+    colorscheme onedark
     set background=dark
     hi Normal guibg=NONE ctermbg=NONE
 ]]

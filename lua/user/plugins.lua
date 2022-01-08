@@ -73,6 +73,7 @@ return packer.startup(function(use)
     -- Colorschemes
     use {"ellisonleao/gruvbox.nvim", requires = {"rktjmp/lush.nvim"}}
     use 'LunarVim/darkplus.nvim'
+    use 'joshdick/onedark.vim'
 
 
     -- cmp plugins
