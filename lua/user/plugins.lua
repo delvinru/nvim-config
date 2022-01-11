@@ -75,6 +75,9 @@ return packer.startup(function(use)
     use 'LunarVim/darkplus.nvim'
     use 'joshdick/onedark.vim'
 
+    -- Yara syntax
+    use 's3rvac/vim-syntax-yara'
+
 
     -- cmp plugins
     use 'hrsh7th/nvim-cmp'
