@@ -69,7 +69,6 @@ return packer.startup(function(use)
         config = function() require'nvim-tree'.setup {} end
     }
 
-
     -- Colorschemes
     use {"ellisonleao/gruvbox.nvim", requires = {"rktjmp/lush.nvim"}}
     use 'LunarVim/darkplus.nvim'
@@ -77,7 +76,6 @@ return packer.startup(function(use)
 
     -- Yara syntax
     use 's3rvac/vim-syntax-yara'
-
 
     -- cmp plugins
     use 'hrsh7th/nvim-cmp'
@@ -90,6 +88,7 @@ return packer.startup(function(use)
     -- LSP config
     use 'neovim/nvim-lspconfig'
     use 'williamboman/nvim-lsp-installer'
+    use 'jose-elias-alvarez/null-ls.nvim'
 
     -- Snippets
     use 'L3MON4D3/LuaSnip'                  -- Snippet engine

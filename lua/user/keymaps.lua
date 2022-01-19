@@ -36,3 +36,6 @@ map('i', 'jk', '<esc>', opts)
 
 -- Pyright stuff
 map('n', 'fi', ':PyrightOrganizeImports<CR>', opts)
+
+-- Formatter
+map('n', 'for', ':lua vim.lsp.buf.formatting_sync()<CR>', opts)
