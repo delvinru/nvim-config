@@ -69,6 +69,12 @@ return packer.startup(function(use)
         config = function() require'nvim-tree'.setup {} end
     }
 
+    -- Telescope
+    use {
+        'nvim-telescope/telescope.nvim',
+        requires = { {'nvim-lua/plenary.nvim'} }
+    }
+
     -- Colorschemes
     use {"ellisonleao/gruvbox.nvim", requires = {"rktjmp/lush.nvim"}}
     use 'LunarVim/darkplus.nvim'

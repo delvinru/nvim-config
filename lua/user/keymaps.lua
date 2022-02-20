@@ -36,3 +36,6 @@ map('i', 'jk', '<esc>', opts)
 
 -- Formatter
 map('n', 'for', ':lua vim.lsp.buf.formatting_sync()<CR>', opts)
+
+-- Telescope
+map('n', '<C-t>', '<cmd>Telescope live_grep<CR>', opts)
