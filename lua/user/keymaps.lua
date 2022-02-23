@@ -38,4 +38,5 @@ map('i', 'jk', '<esc>', opts)
 map('n', 'for', ':lua vim.lsp.buf.formatting_sync()<CR>', opts)
 
 -- Telescope
-map('n', '<C-t>', '<cmd>Telescope live_grep<CR>', opts)
+map('n', '<leader>g', '<cmd>Telescope live_grep<CR>', opts)
+map('n', '<leader>f', '<cmd>Telescope find_files<CR>', opts)
