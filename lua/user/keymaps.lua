@@ -40,3 +40,7 @@ map('n', 'for', ':lua vim.lsp.buf.formatting_sync()<CR>', opts)
 -- Telescope
 map('n', '<leader>g', '<cmd>Telescope live_grep<CR>', opts)
 map('n', '<leader>f', '<cmd>Telescope find_files<CR>', opts)
+
+-- Mirror file
+map('n', '<leader>m', '<cmd>vsplit<cr>', opts)
+map('n', '<leader>s', '<cmd>split<cr>', opts)

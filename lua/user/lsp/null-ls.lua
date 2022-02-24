@@ -10,14 +10,14 @@ local diagnostics = null_ls.builtins.diagnostics
 
 -- https://github.com/prettier-solidity/prettier-plugin-solidity
 -- npm install --save-dev prettier prettier-plugin-solidity
-null_ls.setup {
+null_ls.setup ({
     debug = false,
     sources = {
-        formatting.black.with({
-            extra_args = {"-t", "py310"}
-        }),
         formatting.isort.with({
             extra_args = {"--py", "310"}
+        }),
+        formatting.black.with({
+            extra_args = {"-t", "py310"}
         })
     },
-}
+})
