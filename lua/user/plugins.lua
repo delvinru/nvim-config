@@ -55,9 +55,6 @@ return packer.startup(function(use)
 	use {
 		'nvim-lualine/lualine.nvim',
 		requires = { 'kyazdani42/nvim-web-devicons', opt = true },
-		config = function()
-			require('lualine').setup()
-		end,
 	}
 
     -- Nvim tree
@@ -66,7 +63,6 @@ return packer.startup(function(use)
         requires = {
             'kyazdani42/nvim-web-devicons', -- optional, for file icon
         },
-        config = function() require'nvim-tree'.setup {} end
     }
 
     -- Telescope
@@ -103,6 +99,9 @@ return packer.startup(function(use)
     -- Bufferline
     use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
     use 'moll/vim-bbye'
+
+    -- CodeStats
+    use 'https://gitlab.com/code-stats/code-stats-vim.git'
 
     -- Autosetup stuff
     if PACKER_BOOTSTRAP then
