@@ -35,7 +35,7 @@ map('n', 'S', ':%s//g<Left><Left>', { noremap = true })
 map('i', 'jk', '<esc>', opts)
 
 -- Formatter
-map('n', 'for', ':lua vim.lsp.buf.formatting_sync()<CR>', opts)
+map('n', 'for', ':lua vim.lsp.buf.format()<CR>', opts)
 
 -- Telescope
 map('n', '<leader>g', '<cmd>Telescope live_grep<CR>', opts)

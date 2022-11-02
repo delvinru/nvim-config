@@ -1,5 +1,6 @@
 local options = {
     backup = false,                          -- don't create backup
+    clipboard = "unnamedplus",               -- allow neovim to access the system keyboard
     conceallevel = 0,                        -- so that `` is visible in markdown files
     fileencoding = "utf-8",                  -- normal encodings for file
     hlsearch = true,                         -- highlight all matches on previous search pattern
