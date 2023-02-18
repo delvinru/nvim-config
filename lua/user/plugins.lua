@@ -103,6 +103,8 @@ return packer.startup(function(use)
     -- CodeStats
     use 'https://gitlab.com/code-stats/code-stats-vim.git'
 
+    use 'lewis6991/gitsigns.nvim'
+
     -- Autosetup stuff
     if PACKER_BOOTSTRAP then
         packer.sync()
