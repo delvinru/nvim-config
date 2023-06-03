@@ -1,3 +1,5 @@
+local opt = vim.opt
+
 local options = {
     backup = false,                          -- don't create backup
     clipboard = "unnamedplus",               -- allow neovim to access the system keyboard
@@ -27,8 +29,8 @@ local options = {
     sidescrolloff = 8                        -- same shit
 }
 
-vim.opt.shortmess:append "c"
+opt.shortmess:append "c"
 
 for k, v in pairs(options) do
-  vim.opt[k] = v
+  opt[k] = v
 end

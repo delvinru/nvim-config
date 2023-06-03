@@ -1,5 +1,6 @@
-local status_ok, lualine = pcall(require, 'lualine')
-if not status_ok then
+local status, lualine = pcall(require, 'lualine')
+if not status then
+    print("failed to load: lualine")
     return
 end
 
@@ -8,8 +9,8 @@ local function parse_codestats()
 end
 
 local function parse_lsp_name ()
-    local msg = 'No LSP'
-    local buf_filetype = vim.api.nvim_buf_get_option(0, 'filetype')
+    local msg = "No LSP"
+    local buf_filetype = vim.api.nvim_buf_get_option(0, "filetype")
     local clients = vim.lsp.get_active_clients()
     if next(clients) == nil then
         return msg
@@ -23,7 +24,7 @@ local function parse_lsp_name ()
     return msg
 end
 
-lualine.setup {
+lualine.setup({
       options = {
         icons_enabled = true,
         theme = 'auto',
@@ -56,4 +57,4 @@ lualine.setup {
           },
       tabline = {},
       extensions = {}
-}
+})
