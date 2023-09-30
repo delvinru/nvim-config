@@ -1,1 +1,1 @@
-vim.api.nvim_set_var("codestats_api_key", "changemeordie")
+vim.api.nvim_set_var("codestats_api_key", "KEY")

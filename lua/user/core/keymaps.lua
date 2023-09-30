@@ -1,6 +1,6 @@
 -- for short typings because i'm lazy :)
 local map = vim.api.nvim_set_keymap
-local opts = {noremap = true, silent = true}
+local opts = { noremap = true, silent = true }
 
 -- Remap leader key
 map('', ',', '<Nop>', opts)
@@ -44,5 +44,5 @@ map('n', '<leader>g', '<cmd>Telescope live_grep<CR>', opts)
 -- pane stuff
 map('n', '<leader>v', '<cmd>vsplit<cr>', opts)
 map('n', '<leader>s', '<cmd>split<cr>', opts)
-map('n', '<leader>e', '<C-w>=', opts) -- make split windows equal width
+map('n', '<leader>e', '<C-w>=', opts)               -- make split windows equal width
 map('n', '<leader>m', ':MaximizerToggle<CR>', opts) -- maximize window
